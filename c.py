@@ -27,15 +27,15 @@ time.sleep(1)
 driver.get("http://m.facebook.com/"+person)
 
 time.sleep(1)
-
-while i<40:
+c=0
+while c<i:
 
 
 	try:
 		elem = driver.find_element_by_link_text("ถูกใจ")
 		elem.click()
-		i+=1
-		print "like = " + str(i)
+		c+=1
+		print "like = " + str(c)
 	except:
 		elem = driver.find_element_by_link_text("ดูโพสต์เพิ่มเติม")
 		elem.click()
@@ -43,4 +43,7 @@ while i<40:
 
 	
 	time.sleep(3)
-print "Enddddddd"
+print "  _________"
+print " |         |"
+print " |Enddddddd|"
+print " |_________|"
